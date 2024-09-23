@@ -77,6 +77,7 @@ jobs:
         env:
           TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+          NEXT_PUBLIC_TINA_BRANCH: ${{ env.NEXT_PUBLIC_TINA_BRANCH }}
         run: yarn build
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
