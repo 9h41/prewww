@@ -1,11 +1,11 @@
 {
   "header": {
     "icon": {
-      "name": "Tina",
+      "name": "BiAlarm",
       "color": "orange",
       "style": "float"
     },
-    "name": "Tina Starter",
+    "name": "9h41",
     "color": "default",
     "nav": [
       {
@@ -26,13 +26,13 @@
     "color": "default",
     "social": {
       "facebook": "/",
-      "twitter": "/",
-      "instagram": "/"
+      "twitter": "/9heures41",
+      "instagram": "/9heures41"
     }
   },
   "theme": {
-    "color": "blue",
+    "color": "orange",
     "font": "sans",
-    "darkMode": "light"
+    "darkMode": "dark"
   }
 }
