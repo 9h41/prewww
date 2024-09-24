@@ -32,5 +32,5 @@ const config = defineConfig({
     collections: [Page, Post, Author, Global],
   },
 });
-
+console.log(config.clientId, config.branch, config.token);
 export default config;
