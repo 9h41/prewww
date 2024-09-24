@@ -21,9 +21,9 @@ export default async function Page({
 
 export async function generateStaticParams() {
   const pages = await client.queries.pageConnection();
-  const paths = pages.data?.pageConnection.edges.map((edge) => ({
-    filename: edge.node._sys.breadcrumbs,
-  }));
+  const paths = pages.data?.pageConnection.edges?.map((edge) => 
+    edge ? { filename: edge.node?._sys.breadcrumbs } : null
+  ).filter(Boolean) ?? [];
 
   return paths || [];
 }
