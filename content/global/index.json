@@ -1,7 +1,7 @@
 {
   "header": {
     "icon": {
-      "name": "BiAlarm",
+      "name": "Brand",
       "color": "orange",
       "style": "float"
     },
@@ -10,15 +10,11 @@
     "nav": [
       {
         "href": "",
-        "label": "Home"
+        "label": "Accueil"
       },
       {
         "href": "about",
-        "label": "About"
-      },
-      {
-        "href": "posts",
-        "label": "Blog"
+        "label": "Nous"
       }
     ]
   },
