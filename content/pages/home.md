@@ -12,8 +12,11 @@ blocks:
   - tagline: ''
     headline: 9h41 - partenaire de vos projets
     text: >
-      Forts de plus de 15 ans d'expérience, nous accompagnons vos projets dans
-      l'IT
+      Inspirés par la révolution numérique de 2007, nous vous accompagnons dans
+      tous vos projets de développement et de conseil. 
+
+
+      Ensemble, écrivons le futur.
 
 
       Nous pouvons intervenir auprès de vous pour prototyper vos idées, les
