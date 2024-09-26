@@ -2,9 +2,9 @@
 title: 9h41
 blocks:
   - quote: >-
-      There are only two hard things in Computer Science: cache invalidation and
-      naming things.
-    author: Phil Karlton
+      Great things in business are never done by one person. They're done by a
+      team of people.
+    author: Steve Jobs
     color: black
     textColor: orange
     authorColor: primary
