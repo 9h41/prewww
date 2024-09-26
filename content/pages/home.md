@@ -9,25 +9,15 @@ blocks:
     textColor: orange
     authorColor: primary
     _template: testimonial
-  - headline: 9h41 - partenaire de vos projets
+  - tagline: ''
+    headline: 9h41 - partenaire de vos projets
     text: >
       Forts de plus de 15 ans d'expérience, nous accompagnons vos projets dans
       l'IT
     text2: ''
-    actions:
-      - label: Get Started
-        type: button
-        icon: true
-        link: /about
-      - label: Read Blog
-        type: link
-        icon: false
-        link: /posts
     image:
       src: /uploads/Logo_Orange_Text_1024.png
-      alt: >-
-        Photo of palm trees at sunset by Adam Birkett -
-        unsplash.com/photos/75EFpyXu3Wg
+      alt: 9h41
     color: tint
     _template: hero
   - items:
