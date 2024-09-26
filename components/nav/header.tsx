@@ -13,6 +13,7 @@ const headerColor = {
   default:
     "text-black dark:text-white from-gray-50 to-white dark:from-gray-800 dark:to-gray-900",
   primary: {
+    black: "text-white from-black to-gray-900",
     blue: "text-white from-blue-300 to-blue-500",
     teal: "text-white from-teal-400 to-teal-500",
     green: "text-white from-green-400 to-green-500",

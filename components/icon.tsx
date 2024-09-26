@@ -43,7 +43,7 @@ export const IconOptions = {
                                 <path d="M353.339,3270.73L363.147,3270.73L363.147,3206.12L410.382,3205.24L408.679,3198.5L363.147,3198.28L363.147,3024.73L349.535,3024.73L203.612,3198.11L203.612,3206.12L353.339,3206.12L353.339,3270.73ZM215.422,3198.28L215.422,3197.77L352.538,3034.96L353.339,3034.96L353.339,3198.28L215.422,3198.28Z" fill="white" opacity="0.1"/>
                             </g>
                             <g transform="matrix(2.06774,1.68438,-2.25235,-0.213978,-1037.6,-5098.12)">
-                                <path d="M3811,1312L3928.84,1213.93"  stroke-width="30" stroke="rgb(255,161,15)" fill="rgb(255,161,15)"/>
+                                <path d="M3811,1312L3928.84,1213.93"  strokeWidth="30" stroke="rgb(255,161,15)" fill="rgb(255,161,15)"/>
                             </g>
                             <g transform="matrix(4.94861,0,0,7.13644,-92955,-7906.17)">
                                 <ellipse cx="19662.2" cy="1285.66" rx="6.286" ry="3.724" fill="white" opacity="0.1"/>
@@ -52,7 +52,7 @@ export const IconOptions = {
                                 <path d="M277.977,3237.42L287.786,3237.42L296.348,3026.57L286.834,3024.55L207.014,3067.18L207.014,3076.56L286.482,3034.45L286.882,3034.45L277.977,3237.42Z" fill="white" opacity="0.1"/>
                             </g>
                             <g transform="matrix(4.29716,-0.825509,-3.09414,1.89672,-8763.33,2205.29)">
-                                <path d="M3811,1312L3927,1217"  stroke-width="30" stroke="rgb(255,161,15)" fill="rgb(255,161,15)"/>
+                                <path d="M3811,1312L3927,1217"  strokeWidth="30" stroke="rgb(255,161,15)" fill="rgb(255,161,15)"/>
                             </g>
                         </g>
                     </g>
@@ -73,7 +73,7 @@ export const IconOptions = {
                             <path d="M20382.1,1423.33C20391.2,1423.33 20398.6,1432.33 20398.6,1443.42C20398.6,1454.52 20391.2,1463.52 20382.1,1463.52L20317.4,1463.52C20308.4,1463.52 20301,1454.52 20301,1443.42C20301,1432.33 20308.4,1423.33 20317.4,1423.33L20382.1,1423.33Z" fill="white"/>
                         </g>
                         <g transform="matrix(1.12497,0,0,1.13726,-14003.3,-182.624)">
-                            <circle cx="19599.4" cy="1347.13" r="846.707" stroke="white" stroke-width="10" fill="none"/>
+                            <circle cx="19599.4" cy="1347.13" r="846.707" stroke="white" strokeWidth="10" fill="none"/>
                         </g>
                     </g>
                 </g>
@@ -88,6 +88,10 @@ export const IconOptions = {
 const iconColorClass: {
   [name: string]: { regular: string; circle: string };
 } = {
+  black: {
+    regular: "text-black dark:text-white",
+    circle: "bg-black dark:bg-white text-white dark:text-black",
+  },
   blue: {
     regular: "text-blue-400",
     circle: "bg-blue-400 dark:bg-blue-500 text-blue-50",

@@ -6,15 +6,40 @@ import { Section } from "../layout/section";
 import { Container } from "../layout/container";
 
 export const Testimonial = ({ data }: { data: PageBlocksTestimonial }) => {
+  const textColors = {
+    default:
+      "text-white",
+    tint: "text-gray-700 dark:text-gray-50",
+    primary: {
+      black: "text-black",
+      blue: "text-blue-500",
+      teal: "text-teal-500",
+      green:
+        "text-green-500",
+      red: "text-red-500",
+      pink: "text-ping-500",
+      purple:
+        "text-purple-500",
+      orange:
+        "text-orange-500",
+      yellow:
+        "text-yellow-500",
+    },
+  };
+  const textColorCss = (textColor: string) => {
+    return textColor === "primary"
+      ? textColors.primary[textColor]
+      : textColors.primary[textColor]
+      ? textColors.primary[textColor]
+      : textColors.default;
+  }
   return (
     <Section color={data.color}>
       <Container size="large">
         <blockquote>
           <div
             className={`relative z-10 max-w-3xl mx-auto text-4xl lg:text-5xl font-bold tracking-normal text-center title-font ${
-              data.color === "primary"
-                ? `text-white`
-                : `text-gray-700 dark:text-gray-50`
+              textColorCss(data.textColor)
             }`}
           >
             <span
@@ -47,9 +72,7 @@ export const Testimonial = ({ data }: { data: PageBlocksTestimonial }) => {
             <p
               data-tina-field={tinaField(data, `author`)}
               className={`tracking-wide title-font font-bold text-lg ${
-                data.color === "primary"
-                  ? `text-blue-200`
-                  : `text-blue-500 dark:text-blue-300`
+                textColorCss(data.authorColor)
               }`}
             >
               {data.author}
@@ -95,6 +118,50 @@ export const testimonialBlockSchema: Template = {
         { label: "Default", value: "default" },
         { label: "Tint", value: "tint" },
         { label: "Primary", value: "primary" },
+        { label: "Orange", value: "orange" },
+        { label: "Black", value: "black" },
+        { label: "Teal", value: "teal" },
+        { label: "Green", value: "green" },
+        { label: "Red", value: "red" },
+        { label: "Pink", value: "pink" },
+        { label: "Purple", value: "purple" },
+        { label: "Yellow", value: "yellow" },
+      ],
+    },
+    {
+      type: "string",
+      label: "Text Color",
+      name: "textColor",
+      options: [
+        { label: "Default", value: "default" },
+        { label: "Tint", value: "tint" },
+        { label: "Primary", value: "primary" },
+        { label: "Orange", value: "orange" },
+        { label: "Black", value: "black" },
+        { label: "Teal", value: "teal" },
+        { label: "Green", value: "green" },
+        { label: "Red", value: "red" },
+        { label: "Pink", value: "pink" },
+        { label: "Purple", value: "purple" },
+        { label: "Yellow", value: "yellow" },
+      ],
+    },
+    {
+      type: "string",
+      label: "Author Color",
+      name: "authorColor",
+      options: [
+        { label: "Default", value: "default" },
+        { label: "Tint", value: "tint" },
+        { label: "Primary", value: "primary" },
+        { label: "Orange", value: "orange" },
+        { label: "Black", value: "black" },
+        { label: "Teal", value: "teal" },
+        { label: "Green", value: "green" },
+        { label: "Red", value: "red" },
+        { label: "Pink", value: "pink" },
+        { label: "Purple", value: "purple" },
+        { label: "Yellow", value: "yellow" },
       ],
     },
   ],

@@ -159,7 +159,7 @@ module.exports = {
         },
         dark: {
           css: {
-            color: theme("colors.gray.200"),
+            color: theme("colors.orange.200"),
             '[class~="lead"]': { color: theme("colors.gray.400") },
             a: { color: theme("colors.gray.100") },
             strong: { color: theme("colors.gray.100") },
@@ -191,7 +191,7 @@ module.exports = {
         },
         primary: {
           css: {
-            color: theme("colors.gray.50"),
+            color: theme("colors.yellow.50"),
             '[class~="lead"]': { color: theme("colors.gray.400") },
             a: { color: theme("colors.gray.100") },
             strong: { color: theme("colors.gray.100") },

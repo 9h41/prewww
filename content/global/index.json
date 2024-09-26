@@ -6,11 +6,15 @@
       "style": "float"
     },
     "name": "9h41",
-    "color": "default",
+    "color": "primary",
     "nav": [
       {
         "href": "",
         "label": "Accueil"
+      },
+      {
+        "href": "posts",
+        "label": "Blog"
       },
       {
         "href": "about",
@@ -19,16 +23,16 @@
     ]
   },
   "footer": {
-    "color": "default",
+    "color": "primary",
     "social": {
-      "facebook": "/",
-      "twitter": "/9heures41",
-      "instagram": "/9heures41"
+      "twitter": "https://x.com/9heures41",
+      "instagram": "https://instagram.com/9heures41",
+      "github": "https://github.com/9h41"
     }
   },
   "theme": {
     "color": "orange",
     "font": "sans",
-    "darkMode": "dark"
+    "darkMode": "light"
   }
 }

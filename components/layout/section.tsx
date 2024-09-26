@@ -8,6 +8,7 @@ export const Section = ({ children, color = "", className = "" }) => {
       "text-gray-800 dark:text-gray-50 bg-gradient-to-tl from-gray-50 dark:from-gray-900 via-transparent to-transparent",
     tint: "text-gray-900 dark:text-gray-100 bg-gradient-to-br from-gray-100 dark:from-gray-1000 to-transparent",
     primary: {
+      black: "text-white bg-black bg-gradient-to-br from-black to-gray-900",
       blue: "text-white bg-blue-500 bg-gradient-to-br from-blue-500 to-blue-600",
       teal: "text-white bg-teal-500 bg-gradient-to-br from-teal-500 to-teal-600",
       green:
@@ -25,8 +26,8 @@ export const Section = ({ children, color = "", className = "" }) => {
   const sectionColorCss =
     color === "primary"
       ? sectionColor.primary[theme.color]
-      : sectionColor[color]
-      ? sectionColor[color]
+      : sectionColor.primary[color]
+      ? sectionColor.primary[color]
       : sectionColor.default;
 
   return (
