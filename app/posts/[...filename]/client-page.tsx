@@ -11,6 +11,7 @@ import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { components } from "../../../components/mdx-components";
 
 const titleColorClasses = {
+  default: "from-gray-400 to-gray-600 dark:from-gray-300 dark:to-gray-500",
   blue: "from-blue-400 to-blue-600 dark:from-blue-300 dark:to-blue-500",
   teal: "from-teal-400 to-teal-600 dark:from-teal-300 dark:to-teal-500",
   green: "from-green-400 to-green-600",
@@ -68,7 +69,7 @@ export default function PostClientPage(props: ClientPostProps) {
                 <Image
                   data-tina-field={tinaField(post.author, "avatar")}
                   className="h-14 w-14 object-cover rounded-full shadow-sm"
-                  src={post.author.avatar}
+                  src={post.author.avatar ?? "/images/default-avatar.png"}
                   alt={post.author.name}
                   width={500}
                   height={500}
