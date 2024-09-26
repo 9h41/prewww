@@ -7,10 +7,9 @@ import { Icon } from "../icon";
 import { FaFacebookF, FaGithub, FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { useLayout } from "../layout/layout-context";
-import { RawRenderer } from "../raw-renderer";
 
 export default function Footer() {
-  const { theme, globalSettings, pageData } = useLayout();
+  const { theme, globalSettings } = useLayout();
   const footer = globalSettings?.footer;
 
   const socialIconClasses = "h-7 w-auto";
