@@ -119,6 +119,22 @@ const Global: Collection = {
         },
         {
           type: "string",
+          label: "Active Text Color",
+          name: "activeText",
+          ui: {
+            component: ColorPickerInput,
+          },
+        },
+        {
+          type: "string",
+          label: "Active Background Color",
+          name: "activeBackground",
+          ui: {
+            component: ColorPickerInput,
+          },
+        },
+        {
+          type: "string",
           name: "font",
           label: "Font Family",
           options: [

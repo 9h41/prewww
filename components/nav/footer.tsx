@@ -42,7 +42,7 @@ export default function Footer() {
   };
 
   const footerColorCss =
-    theme?.darkMode === "primary"
+    theme?.color === "primary"
       ? footerColor.primary[theme.color]
       : footerColor.default;
 
@@ -77,7 +77,7 @@ export default function Footer() {
                 <FaFacebookF
                   className={`${socialIconClasses} ${
                     socialIconColorClasses[
-                      footer.color === "primary" ? "primary" : theme.color
+                      footer.color === "primary" ? "primary" : footer.color
                     ]
                   }`}
                 />
@@ -92,7 +92,7 @@ export default function Footer() {
                 <FaTwitter
                   className={`${socialIconClasses} ${
                     socialIconColorClasses[
-                      footer.color === "primary" ? "primary" : theme.color
+                      footer.color === "primary" ? "primary" : footer.color
                     ]
                   }`}
                 />
@@ -107,7 +107,7 @@ export default function Footer() {
                 <AiFillInstagram
                   className={`${socialIconClasses} ${
                     socialIconColorClasses[
-                      footer.color === "primary" ? "primary" : theme.color
+                      footer.color === "primary" ? "primary" : footer.color
                     ]
                   }`}
                 />
@@ -122,14 +122,14 @@ export default function Footer() {
                 <FaGithub
                   className={`${socialIconClasses} ${
                     socialIconColorClasses[
-                      footer.color === "primary" ? "primary" : theme.color
+                      footer.color === "primary" ? "primary" : footer.color
                     ]
                   }`}
                 />
               </a>
             )}
           </div>
-          <RawRenderer parentColor={footer.color} rawData={pageData} />
+          <div className="flex gap-4"></div>
         </div>
         <div
           className={cn(

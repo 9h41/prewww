@@ -21,6 +21,8 @@ export const useLayout = () => {
       theme: {
         color: "blue",
         darkMode: "default",
+        activeBackground: "blue",
+        activeText: "blue"
       },
       globalSettings: undefined,
       pageData: undefined,
