@@ -4,7 +4,8 @@ import { cn } from "../../lib/utils";
 import { Container } from "../layout/container";
 import Link from "next/link";
 import { Icon } from "../icon";
-import { FaFacebookF, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { useLayout } from "../layout/layout-context";
 
@@ -88,7 +89,7 @@ export default function Footer() {
                 href={footer.social.twitter}
                 target="_blank"
               >
-                <FaTwitter
+                <FaXTwitter
                   className={`${socialIconClasses} ${
                     socialIconColorClasses[
                       footer.color === "primary" ? "primary" : footer.color
