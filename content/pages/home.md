@@ -14,6 +14,14 @@ blocks:
     text: >
       Forts de plus de 15 ans d'expérience, nous accompagnons vos projets dans
       l'IT
+
+
+      Nous pouvons intervenir auprès de vous pour prototyper vos idées, les
+      faire grandir et les commercialiser.
+
+
+      Nous sommes également présents pour accompagner les transformations de vos
+      projets, en apportant notre expertise.
     text2: ''
     image:
       src: /uploads/Logo_Orange_Text_1024.png
