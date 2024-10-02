@@ -31,10 +31,10 @@
     }
   },
   "theme": {
-    "color": "orange",
+    "color": "blue",
+    "activeText": "amber",
+    "activeBackground": "amber",
     "font": "sans",
-    "darkMode": "light",
-    "activeBackground": "blue",
-    "activeText": "blue"
+    "darkMode": "light"
   }
 }
