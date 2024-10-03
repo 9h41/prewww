@@ -13,7 +13,7 @@ blocks:
     headline: 9h41 - partenaire de vos projets
     text: >
       Inspirés par la révolution numérique de 2007, nous vous accompagnons dans
-      tous vos projets de développement et de conseil. 
+      tous vos projets de développement et de conseil.
 
 
       Ensemble, écrivons le futur.
@@ -33,6 +33,12 @@ blocks:
     _template: hero
   - items:
       - icon:
+          name: BiPalette
+          color: green
+          style: float
+        title: Design sprints
+        text: Pour définir efficacement les besoins de vos utilisateurs
+      - icon:
           name: BiCodeBlock
           color: red
           style: float
@@ -44,12 +50,6 @@ blocks:
           style: float
         title: Accompagnement
         text: 'Au jour le jour, nous faisons grandir vos projets'
-      - icon:
-          name: BiPalette
-          color: green
-          style: float
-        title: Design sprints
-        text: Pour définir efficacement les besoins de vos utilisateurs
     color: tint
     _template: features
 ---
