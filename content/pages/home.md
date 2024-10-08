@@ -1,14 +1,6 @@
 ---
 title: 9h41
 blocks:
-  - quote: >-
-      Great things in business are never done by one person. They're done by a
-      team of people.
-    author: Steve Jobs
-    color: black
-    textColor: orange
-    authorColor: primary
-    _template: testimonial
   - tagline: ''
     headline: 9h41 - partenaire de vos projets
     text: >
@@ -31,6 +23,14 @@ blocks:
       alt: 9h41
     color: tint
     _template: hero
+  - quote: >-
+      Great things in business are never done by one person. They're done by a
+      team of people.
+    author: Steve Jobs
+    color: black
+    textColor: orange
+    authorColor: primary
+    _template: testimonial
   - items:
       - icon:
           name: BiPalette
